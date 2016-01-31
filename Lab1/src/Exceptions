@@ -1,0 +1,35 @@
+Exception Handling
+
+-Create an excemption class
+
+class MyException extends Exception {
+    1. super(); // constructor
+    2. String toString(); // Override
+}
+
+MyUtilityClass {
+    void m1(...) throws MyException {
+        /for certain situations
+
+        if(...) // not good
+            throw new MyException(...);
+    }
+}
+
+MyProg{
+    mainWindows(...){
+        MyUtilities muc;
+
+        try{
+            muc.m1();
+        }catch(MyException me){
+
+        }
+    }
+}
+
+
+
+//InputVerifier
+
+field.setInputverifier(null);
